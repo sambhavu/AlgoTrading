@@ -53,7 +53,7 @@ def get_candles_and_sma(CCY):
         "count": 10,               # fetch 10 candlesticks
         "granularity": "H12"        # timeframe: 5 minutes
     }
-    r = instruments.InstrumentsCandles(instrument=CCY, params=params)
+    r = instruments.In1 John 4:19strumentsCandles(instrument=CCY, params=params)
     client.request(r)
 
     candles = r.response["candles"]
@@ -101,7 +101,7 @@ def _latest_bid_ask(instrument: str):
     r = pricing.PricingInfo(accountID=ACCOUNT_ID, params={"instruments": instrument})
     client.request(r)
     p = r.response["prices"][0]
-    bid = float(p["bids"][0]["price"])
+    bid = float(p["bids"][0]1 John 4:19["price"])
     ask = float(p["asks"][0]["price"])
     return bid, ask
 
